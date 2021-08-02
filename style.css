@@ -1,0 +1,169 @@
+   body {
+      /* max-width: 1000px; */
+      margin: auto;
+      font-family: roboto;
+      font-size: 16px;
+      color: white;
+     background-color:black;
+   }
+ h1 {
+    font: italic small-caps bolder 28px arial,sans-serif;
+ }
+
+ p {
+    padding: 5px 50px 15px 100px;
+    border:1px  ;
+    margin:5px;
+  }
+
+   div{
+      border: 2px solid black;
+     padding: 5px 50px 15px 10px;
+         }
+   
+ .container{
+    display: flex;
+    justify-content: space-between;
+ }
+ @media screen and (max-width: 900px) {
+     .container{
+         text-align: center;
+        flex-direction: column;
+         width: 100%;
+         padding: 0%;
+     }
+ }
+
+              
+ #image{
+display: flex;
+justify-content: center;
+margin-left: 100px;
+margin-top: 50px;
+ }
+ 
+ #identity{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 300px; */
+  width: 100%;
+  padding:0%;
+ }
+
+ /* Media Queries */
+@media screen and (max-width: 800px) {
+ 
+  #identity {
+    grid-template-columns: 1fr;
+    padding:0%;
+    /* grid-template-rows: 1fr; */
+  }
+
+  #image {
+    margin-top: 40px;
+  }
+
+}
+ 
+ #background-image{
+     background-image: url("img/man.jpg");
+     height:350px;
+     padding-top:50px;
+     color:#fff;
+     margin-top:25px;
+ }
+
+ 
+@media screen and (max-width: 900px) {
+    #background-image{
+        display: flex;
+            flex-direction: column;
+    }
+    }
+
+ 
+ #content{
+     background-color:  rgba(0,0,0,0.7);
+     max-width: 450px;
+     padding:  10px 20px;
+     margin-top:  50px;
+ }
+ 
+ table{
+     border: 1px solid;
+     width: 100%;
+     border-collapse: collapse;
+ }
+ 
+ th,td{
+     padding: 15px;
+     border: 1px solid #a4a4a4;
+     height: 30px;
+ }
+ 
+ th{
+     text-align: left;
+ }
+  
+ 
+#ironman{
+    display: flex;
+    justify-content:space-around
+}
+
+@media screen and (max-width: 900px) {
+#ironman{
+    display: flex;
+        flex-direction: column;
+}
+}
+
+ nav{
+     list-style-type: none;
+     margin:0;
+     padding: 0px 0px 10px 0px;
+     overflow: hidden;
+     }
+ li a{
+     display: block;
+     color: #666;
+     padding: 14px 16px;
+     text-decoration: none;
+     }
+     
+.logo{
+         height: 50px;
+         font-size: 18px;
+         line-height: 20px;
+     }
+     
+#header{
+        display: flex;
+        justify-content: space-between;
+         padding: 5px 0px;
+         color: #403f3f;
+         text-align: center;
+         margin: auto;
+         border-bottom: 1px solid;             
+     }
+ 
+     
+@media screen and (max-width: 900px) {
+    #header{
+        display: flex;
+            flex-direction: column;
+    }
+    }
+    
+      a:link{
+    color: red;        
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: blue;        
+}
+a:active{
+    color: yellow;
+} 
